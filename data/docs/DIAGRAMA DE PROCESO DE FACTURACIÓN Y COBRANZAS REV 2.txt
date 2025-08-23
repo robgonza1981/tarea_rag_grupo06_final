@@ -1,0 +1,148 @@
+################################     DIAGRAMA DE PROCESO DE FACTURACIÓN Y COBRANZAS     ################################
+
+### OBJETIVO
+El Objetivo de este proceso es realizar la facturación de los productos comercializados por KSB Chile S.A y su respectiva cobranza, de acuerdo con lo convenido con el cliente.
+
+### CONTROL DE CAMBIOS
+
+Código: DP-F-001-CL
+    Revisión: 2
+    Revisor: Jefe de Finanzas
+    Aprobador:  Jefe de Facturación
+    Fecha de aprobación: 14/08/2024.
+### MODIFICACIONES DEL DOCUMENTO
+    Revisión 1:
+    Actividad "Generar factura electrónica", punto 1: Modificación de cuadro ilustrativo de emisión de facturas de acuerdo con la condición de entrega definida según ubicación geográfica
+    Inclusión de actividades "Generar OV negativa y nota de crédito manual / generar OV positiva y factura manual" y "Realizar aplicación de documentos".
+    Revisión 2:
+    Actividad "Generar factura interna": Inclusión del punto 4.
+
+### DESCRIPCIÓN DEL PROCESO
+
+###### IDENTIFICAR REQUERIMIENTOS DE FACTURACIÓN A CLIENTES
+1. El Analista de facturación debe ejecutar diariamente el reporte 7.10.18.15 “REP Guías de despacho No Facturadas” en el sistema QAD (ver información documentada complementaria) y con la información contenida en el reporte genera la planilla “Seguimiento de Guías a facturar”, en la cual en la columna “Ind.” se identifica la forma de entrega de la mercadería o indicador de traslado en base al SII. Las opciones del “Ind” son:
+        1=Constituye venta
+        2=Venta por efectuar
+        9=Exportación
+        6=Proyecto
+
+###### VERIFICAR DOCUMENTOS EN EL SISTEMA QAD
+1. El Analista de Facturación debe verificar que los datos de la factura coincidan con los de venta para proceder con la facturación. Para ello, revisa la planilla “Seguimiento de Guías a facturar” y busca cada guía a facturar en el portal BCN (priorizando las guías que constituyen venta). Luego, identifica la orden venta asociada la guía e ingresa a e-docs del sistema QAD (43.2) para verificar y comparar los datos indicados en la OC del cliente (ver información documentada complementaria). Los datos que deben coincidir son:
+Numero de Orden de compra del Cliente
+    Nombre del Cliente,
+    Rut,
+    Dirección,
+    artículos,
+    líneas,
+    cantidades,
+    precios y
+    lugar de entrega.
+2. Si se detectan diferencias o falta de información el Analista de Facturación debe enviar un correo electrónico al vendedor, indicado la Orden de Venta y solicitando la aclaración.
+3. En los casos que se requiera código de aceptación del cliente (HES/HEM/MIGO, entre otros), el Analista de Facturación debe solicitar al Vendedor encargado dicho código. Al recibir el Código, el Analista de Facturación debe ingresar al módulo 7.10.20.17 “MNTO Ref Adicionales referencias” del sistema QAD y digitar el código de aceptación (ver información documentada complementaria).
+
+###### GENERAR FACTURA ELÉCTRÓNICA
+1. Una vez verificados los datos de las guías con la OC, el Analista de Facturación debe emitir las facturas de acuerdo con la condición de entrega definida según ubicación geográfica, indicada en el siguiente cuadro:
+NOTA: Los plazos anteriormente descritos tienen como objetivo evitar rechazos por no recepción de la mercadería.
+2. El Analista de Facturación debe considerar aquellos conceptos a facturar que no incluyen IVA a fin de generar la factura exenta, a través del módulo 7.10.20.4 “Impresión factura exenta electrónica” (ver información documentada complementaria).
+NOTA 1: La facturación exenta se refiere a los servicios en el exterior del país y cobros exentos (recuperación de gastos).
+NOTA 2: La facturación exenta de servicios en el exterior del país, no será controlada por el sistema de rechazo de SII, ya que es emitida a clientes extranjeros.
+3. Antes del cierre del mes el Analista de Facturación debe facturar todas las guías de despacho.
+4. El Analista de Facturación debe imprimir las Facturas a través del módulo 7.10.20.1 “Imprime Factura Electrónica” del sistema QAD (ver información documentada complementaria). Para ello debe indicar el almacén, la orden de venta y la sucursal que emite.
+5. Una vez generada la impresión, el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SIII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+
+###### GENERAR NOTA DE DEBITO
+1. El Analista de facturación debe generar notas de débito, en los siguientes casos:
+Para anular una nota de crédito: El Analista de facturación debe generar una nueva OV a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimirla en el módulo 7.10.20.3 referenciando la nota de crédito que se va a anular (ver información documentada complementaria).
+Para realizar un cobro adicional de una venta facturada: El Analista de facturación debe generar una nueva OV a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimirla en el módulo 7.10.20.3 referenciando la factura de la venta asociada (ver información documentada complementaria).
+
+
+###### GENERAR FACTURA INTERNA
+1. El Analista de facturación debe generar facturas internas, para realizar cobros internos de las distintas áreas de negocio.
+2. Para realizar la factura interna el Analista de facturación debe recibir una orden de servicio positiva u orden de venta positiva del responsable del área que requiere cobrar su servicio, a través de un correo electrónico. Posteriormente, el Analista de facturación debe imprimir el documento “IVP interna” en el módulo 7.13.4 “Registro e impresión factura” (ver información documentada complementaria).
+3. El Analista de facturación debe generar una nueva OV negativa a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimir el documento “IVN interna” en el módulo 7.13.4 “Registro e impresión factura” (ver información documentada complementaria).
+4.- Para imprimir los documentos internos El analista de facturación debe utilizar el mismo modulo mencionado anteriormente 7.13.4 (tutorial impresión de documentos internos), para los siguientes documentos:
+WR, garantías solicitadas por servicios y área de post venta
+NU, interentidad (IV) solicitadas por el área de servicio.
+
+
+###### GENERAR FACTURA MANUAL
+1. El Analista de facturación debe generar facturas manuales, en los siguientes casos:
+Para generar facturas FI (factura de venta de mercaderías situadas en el extranjero o en Chile no nacionalizadas): El Analista de facturación debe recibir la solicitud por correo electrónico de los responsables de Almacén, en el cual debe indicarse la OV para a facturar.  Posteriormente debe imprimir la factura “FI” en el módulo 7.13.4 “Registro e impresión factura”.
+Para generar el documento DJ (declaración jurada de compra para convenciones sobre mercaderías situadas en el extranjero o en Chile no nacionalizadas): El Analista de facturación debe recibir la solicitud por correo electrónico de los responsables de Comex, en el cual debe indicarse el número de embarque asociado a la factura de venta, el destino (puerto de embarque) y ciudad. Del número de embarque extrae los costos asociados al embarque y posteriormente debe proceder con el llenado manual del documento “DJ”.
+Para generar factura Ley Navarino (factura de venta exenta a empresa del territorio preferencial, arts. 1 y 9 de la ley número 18392): El Analista de facturación debe imprimir la misma a través del módulo 7.13.4, tomando la guía de despacho.
+2. Los documentos anteriores deben ser presentados por el Analista de facturación al SII para que sean timbrados. Esto se realiza a través de una petición administrativa.
+
+###### GENERAR FACTURA DE EXPORTACIÓN
+1. El Analista de facturación debe registrar las referencias adicionales en el módulo 7.10.20.13. Posteriormente, procede a imprimir en el módulo 7.10.20.27 “Impr fact exportac electrónica”.
+NOTA: Las referencias adicionales a registrar son puerto de embarque, puesto de desembarque, modalidad y clausula de venta, tipo y total de bultos y país de destino.
+Si el cliente rechaza la factura
+
+###### REVISAR MOTIVO DE RECHAZO DE FACTURAS
+1. El Analista de facturación debe revisar diariamente la información de registro compra y venta del SII (facturación electrónica – registro de aceptación o reclamo de un DTE), a fin de verificar si hay facturas rechazadas (ver información documentada complementaria).
+Nota 1: En caso alternativo se puede consultar la información en el sistema BCN.
+2. Los motivos de rechazo de factura son los siguientes:
+    Motivo 1: Por contenido
+    Motivo 2: Rechazo mercadería parcial
+    Motivo 3: Rechazo mercadería total
+    Motivo 4: Rechazo contenido y mercadería
+3. Con la información de las facturas rechazadas, el Analista de facturación debe ingresar al módulo facturación electrónica – consulta registro de compra y venta de SII para saber el motivo del rechazo (ver información documentada complementaria).
+4. El Analista de facturación debe ingresar al módulo 50.3.1 del sistema QAD y registrar el documento rechazado indicando el motivo. Automáticamente le llegará un correo automático al vendedor asociada a la venta, indicándole los antecedentes del documento rechazado.
+5. Adicionalmente, el Analista de facturación debe realizar seguimiento para resolver el rechazo y realizar la acción que se requiera (refacturación y/o generación de nota de crédito).
+
+Si se requiere proceso manual
+
+###### GENERAR COPIA DE OV NEGATIVA Y NC / GENERAR COPIA DE OV POSITIVA Y FACTURA
+1. En los casos en los que el motivo de rechazo no incluya devolución de mercadería, debe identificarse la causa raíz del rechazo a través del análisis del caso con el vendedor o plataforma del cliente. Al identificar el causal especifico del rechazo, el Analista de facturación debe generar la OV negativa manual replicando la factura rechazada a través del módulo 7.1.1 e imprimirla en el módulo 7.10.20.2 del sistema QAD (ver información documentada complementaria), a fin de generar la NC, referenciando la factura rechazada.
+2. Adicionalmente el Analista de facturación debe generar la OV positiva manual y nueva factura, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria). Una vez generada la OV positiva, el Analista de facturación debe ingresar los datos de referencias adicionales de forma correcta a fin de que la factura no sea nuevamente rechazada. Esto se realiza en el módulo 7.10.20.17 del sistema QAD (ver información documentada complementaria).
+3. Una vez generada la impresión de los documentos (NC y nueva factura), el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SIII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+No se requiere proceso manual
+
+###### EMITIR NC POR DEVOLUCIÓN DE MERCADERÍA
+1. Cuando se cumpla los motivos de rechazo 2 y 3, el vendedor debe generar la SR (solicitud de retorno) una vez que el Encargado de recepción le notifica el ingreso de material devuelto.
+2. El sistema QAD genera una notificación automática por correo electrónico al Analista de facturación indicando los datos de la SR, con los cuales se debe generar la nota de crédito, a través del módulo 7.10.20.2 del sistema QAD (ver información documentada complementaria), referenciando la factura que se va a rebajar.
+Nota: La nota de crédito debe ser generada una vez que el Planificador del área de procesos OV-OC, le dé la confirmación.
+3. El Analista de facturación responde sobre el correo enviado por Planificador del área de procesos OV-OC, indicando que el proceso de emisión de NC ha finalizado.
+4. Una vez generada la impresión, el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SIII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+
+
+###### GENERAR COPIA DE OV NEGATIVA Y NC / GENERAR COPIA DE OV POSITIVA Y FACTURA
+1. En los casos en los que el motivo de rechazo no incluya devolución de mercadería, debe identificarse la causa raíz del rechazo a través del análisis del caso con el vendedor o plataforma del cliente. Al identificar el causal especifico del rechazo, el Analista de facturación debe generar la copia de la OV negativa replicando la factura rechazada a través del módulo 7.10.20.35 e imprimirla en el módulo 7.10.20.2 del sistema QAD (ver información documentada complementaria), a fin de generar la NC.
+2. Adicionalmente el Analista de facturación debe generar la copia de la OV positiva y nueva factura, a través del módulo 7.10.20.36 del sistema QAD (ver información documentada complementaria). Una vez generada la OV positiva, el Analista de facturación debe ingresar los datos de referencias adicionales de forma correcta a fin de que la factura no sea nuevamente rechazada. Esto se realiza en el módulo 7.10.20.17 del sistema QAD (ver información documentada complementaria).
+3. Una vez generada la impresión de los documentos (NC y nueva factura), el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+
+Si se requiere NC administrativa/correctiva/manual
+
+###### EMITIR NC CORRECTIVA, ADMINISTRATIVA Y MANUAL
+NC Correctiva:
+1. En los casos en los que se identifique alguna diferencia con la factura (tipo de cambio utilizado, precios o descuento no aplicado), el Analista de facturación debe generar una OV negativa, a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimirla en el módulo 7.10.20.2 (ver información documentada complementaria), referenciando la factura que se va a rebajar (con esto se genera la NC).
+2. Una vez generada la impresión del documento, el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SIII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+NC Administrativa:
+1. En los casos en los que se identifique alguna diferencia con los datos de la factura (dirección, razón social o descripción de la mercadería), el Analista de facturación debe generar una OV negativa sin monto, a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimirla en el módulo 7.10.20.2 (ver información documentada complementaria), referenciando la factura que se va a rebajar (con esto se genera la NC).
+2. Una vez generada la impresión del documento, el sistema QAD se comunica de forma automática con el programa BCN y se distribuyen los archivos xml y pdf a las casillas de SII de los Clientes. Cada cliente, en su cuenta del SIII-facturación Electrónica, debe revisar y visualizar la facturación y cuenta con un plazo de 8 días corridos para realizar el rechazo de facturas.
+NC Manual:
+1. En los casos que se requiera el Analista de facturación requiera emitir una emitir una nota de crédito manual (correctiva, administrativa o con un rechazo), debe realizarlo siguiendo las indicaciones del documento “Creación de OV para NC manual”, a través del módulo 7.1.1 del sistema QAD, embarcar la OV en el módulo 7.10.21.1 e imprimirla en el módulo 7.10.20.2 (ver información documentada complementaria), referenciando la factura que se va a rebajar (con esto se genera la NC).
+
+REALIZAR APLICACIÓN DE DOCUMENTOS
+1. El Analista de facturación cada vez que emita una Nota de crédito con la factura respectiva que anula y/o rebaja, IVN o IVP, deberá aplicarlos en un módulo financiero 27.6.4.1 “Creación pago cliente” con la finalidad de que dichos documentos sean pagados entre sí en la cuenta corriente del cliente, generando una transacción contable.
+REALIZAR CUADRATURA E INFORMES DE GESTIÓN
+1. El Analista de facturación debe realizar diariamente el análisis y cuadratura de los documentos emitidos, realizando un comparativo con el Budget y forescat, a fin de ser informadas a todas las Gerencias respecto a la facturación y guías de despacho por facturar. Para el análisis debe usar la planilla “Informe diario facturación”.
+Nota 1: Los documentos emitidos se obtienen a través del módulo 7.15.24.13 (reporte estadístico de facturación) y 7.10.18.15 (guías de despacho no facturadas) del sistema QAD (ver información documentada complementaria).
+Nota 2: La comparación se realiza a través de la información extraída del modulo 25.15.2.9 del sistema QAD (ver información documentada complementaria).
+2. El Analista de facturación debe realizar adicionalmente a lo indicado en el punto 1, la cuadratura con el registro de compra y venta de SII y el libro de ventas de facturación, en el módulo 25.10.4 (ver información documentada complementaria). Para el análisis debe usar la planilla “Cuadratura de ventas”.
+
+
+###### GESTIONAR COBRANZA
+1. El Sistema para la gestión de cobranza DUEMINT se comunica con el sistema de SII (Facturación Electrónica) y realiza la identificación de las facturas nacionales emitidas por nuestra compañía que constituyen la venta del día anterior. Luego, procede a enviar correos de aviso de emisión de estas facturas a los encargados del área cuentas por pagar de los clientes.
+2. Adicionalmente, con una frecuencia semanal, envía correos con detalle de la cuenta corriente del cliente a los encargados del área cuentas por pagar de los clientes., detallando las facturas por vencer y/o vencidas.
+3. El Sistema para la gestión de cobranza DUEMINT verifica diariamente los depósitos recibidos en las cuentas bancarias de KSB Chile. Si el cliente realiza un pago, el sistema identifica la(s) factura(s) asociada(s) a ese pago.
+4. Diariamente el Asistente de cobranzas debe realizar la contabilización de facturas en el módulo 27.6.4 del sistema QAD (ver información documentada complementaria), con la información disponible enviada por los vendedores, los clientes y/o el Encargado de cobranza externa. El día hábil siguiente, debe realizar la conciliación bancaria respectiva.
+5. Diariamente el Asistente de cobranzas debe realizar la conciliación bancaria en el módulo 25.7.1 del sistema QAD. Para aquellos depósitos no identificados en la conciliación, el Asistente de cobranza debe realizar el análisis para identificar a que corresponde el pago respectivo tomando a través del Sistema para la gestión de cobranza DUEMINT.
+7. En caso de que el pago corresponda a un anticipo, el Asistente de cobranza debe registrarlo en el módulo 25.13.5 o 31.1.1 del sistema QAD (ver información documentada complementaria). Adicionalmente, debe calzar los anticipos con las nuevas facturas emitidas, actualizar el sistema cobranza y dar de baja la o las facturas pagadas.
+8. El Asistente de Cobranzas debe contabilizar las facturas relacionadas con el o los cheques emitidos por los clientes.  Adicionalmente, debe calzar los cheques con las facturas emitidas, actualizar el sistema cobranza y dar de baja la o las facturas pagadas con estos documentos.
+
+
+######  SOLICITAR GESTIÓN DE COBRANZA EXTERNA
+1. El encargado de cobranza externa revisa diariamente el informe de facturas pendientes por cobrar en el sistema para la gestión de cobranza DUEMINT, para gestionar la cobranza de las facturas impagas.
+2. La empresa de cobranzas está facultada a realizar las siguientes acciones, según la cantidad de días transcurridos después del vencimiento de la factura, en caso de que no haya respuesta o respuesta razonable por parte del cliente y previa consulta con el vendedor:
+3. El Asistente de cobranzas debe elaborar semanalmente el informe semanal de cobranzas, en donde se muestran los documentos impagos y solicita por correo electrónico al encargado de cobranza externa su análisis y respuesta. Dicho correo debe ir con copia a los Gerentes y directores de cada área de KSB Chile.
+4. El Asistente de cobranzas debe elaborar mensualmente el informe mensual de cuentas corrientes de clientes y lo guarda en la carpeta compartida a fin de que el área de contabilidad pueda visualizarlo y dar respuesta a las solicitudes de KSB Alemania.

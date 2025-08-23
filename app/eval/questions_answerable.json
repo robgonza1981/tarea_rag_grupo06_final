@@ -1,0 +1,69 @@
+[
+  {
+    "q": "¿Qué reporte específico debe ejecutar diariamente el Analista de Facturación para identificar todas las guías de despacho que aún no han sido facturadas? Además, ¿cuáles son los indicadores de entrega que pueden aparecer en dicho reporte y qué significado tiene cada uno?",
+    "expect_all": ["7.10.18.15", "REP Guías de despacho No Facturadas"],
+    "expect_any": ["Ind.", "1=Constituye venta", "2=Venta por efectuar", "9=Exportación", "6=Proyecto"]
+  },
+  
+  {
+    "q": "Antes de proceder con la facturación, ¿qué datos clave deben coincidir exactamente entre la factura generada y la Orden de Compra (OC) del cliente para evitar rechazos o errores?",
+    "expect_all": ["Número de Orden de compra", "Nombre del Cliente", "Rut", "Dirección", "Artículos", "Líneas", "Cantidades", "Precios", "Lugar de entrega"]
+  },
+  {
+    "q": "En los casos donde la venta requiere un código de aceptación del cliente, como HES, HEM o MIGO, ¿en qué módulo y pantalla de QAD se debe registrar este código y cuál es el procedimiento correcto?",
+    "expect_all": ["7.10.20.17", "MNTO Ref Adicionales referencias"]
+  },
+  {
+    "q": "Si una factura es rechazada por el cliente pero no implica devolución de mercadería, ¿cómo se deben generar la Nota de Crédito (NC) y la nueva factura, asegurando que ambas estén correctamente asociadas a las copias de la Orden de Venta (OV)?",
+    "expect_all": ["7.10.20.2"],
+    "expect_any": ["7.10.20.35", "7.1.1", "7.10.20.36"]
+  },
+  {
+    "q": "Explique el procedimiento y el momento adecuado para emitir una nota de crédito por devolución de mercadería, incluyendo los motivos válidos y cómo se notifica al cliente.",
+    "expect_all": ["SR", "7.10.20.2"],
+    "expect_any": ["motivo 2", "motivos de rechazo 2", "motivo 3", "motivos de rechazo 3", "QAD notifica", "notificación automática"]
+  },
+  {
+    "q": "¿En qué módulo y proceso se deben aplicar las Notas de Crédito (NC), IVN o IVP contra su factura original para que queden compensadas correctamente en la cuenta corriente del cliente?",
+    "expect_all": ["27.6.4.1", "Creación pago cliente"]
+  },
+  {
+    "q": "¿Cuáles son las fuentes de información utilizadas en la Cuadratura de ventas y con qué frecuencia se debe realizar este proceso para asegurar la integridad de los datos?",
+    "expect_all": ["25.10.4"],
+    "expect_any": ["7.15.24.13", "7.10.18.15", "25.15.2.9", "Diariamente", "registro de compra y venta SII", "libro de ventas"]
+  },
+  {
+    "q": "Después de imprimir los documentos tributarios electrónicos (DTE), ¿por qué medios llegan estos documentos al cliente y cuál es el plazo máximo que tiene el cliente para rechazar un DTE según la normativa vigente?",
+    "expect_all": ["BCN", "xml", "pdf", "SII", "8 días"]
+  },
+  {
+    "q": "¿Qué validaciones automáticas realiza el Procesador antes de liberar una Orden de Venta (OV) de stock rápido y en qué módulos se efectúan estas validaciones?",
+    "expect_all": ["3.6.30.31", "7.12.20.7"]
+  },
+  {
+    "q": "¿En qué módulo se puede liberar una Orden de Venta (OV) utilizando el número de cotización y qué información relevante muestra el sistema al finalizar este proceso?",
+    "expect_all": ["7.12.10", "número de OV"]
+  },
+  {
+    "q": "¿Cuál es el Acuerdo de Nivel de Servicio (SLA) de entrega para ventas de stock rápido que han sido procesadas antes de las 14:00 horas?",
+    "expect_all": ["1 día hábil"]
+  },
+  {
+    "q": "¿Dónde y cómo se debe cargar el archivo que contiene toda la documentación del pedido una vez que la Orden de Venta (OV) ha sido confirmada?",
+    "expect_all": ["43.1", "e-docs"]
+  },
+  {
+    "q": "Si al revisar una Orden de Venta (OV) falta material, ¿qué menú se utiliza para consultar la disponibilidad y cómo se estima la fecha de entrega cuando existe una Orden de Trabajo (OT) asociada?",
+    "expect_all": ["3.6.30.31"],
+    "expect_any": ["OT", "fecha de entrega", "carga de producción", "almacenes", "reportes de carga"]
+  },
+  {
+    "q": "Describa el procedimiento para solicitar y aprobar la contratación de personal antes de iniciar el proceso de reclutamiento, incluyendo los responsables de cada etapa.",
+    "expect_all": ["Workday", "jefatura directa", "Director", "R&S"]
+  },
+  {
+    "q": "Una vez firmada la carta oferta, ¿qué documentación debe solicitarse al candidato y qué estado debe registrarse en Workday para avanzar en el proceso de contratación?",
+    "expect_all": ["listo para contratar", "Contratado"],
+    "expect_any": ["CV", "Cédula", "AFP", "Fonasa", "Isapre", "título", "alumno regular", "foto", "finiquito", "licencia"]
+  }
+]

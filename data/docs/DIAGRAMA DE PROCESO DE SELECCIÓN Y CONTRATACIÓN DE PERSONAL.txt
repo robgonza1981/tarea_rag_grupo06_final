@@ -1,0 +1,95 @@
+################################     DIAGRAMA DE PROCESO DE SELECCIÓN Y CONTRATACIÓN DE PERSONAL        ################################     
+
+### OBJETIVO
+    El objetivo de este proceso es captar y contratar el personal idóneo para las operaciones de KSB Chile S.A. según lo requerido por la organización.
+
+### CONTROL DE CAMBIOS
+    Código: DP-R-001-CL
+    Revisión: 2
+    Revisor: Jefe (a) de reclutamiento y selección, capacitación y DO
+    Aprobador: Gerente (a) de RRHH
+    Fecha de aprobación: 13/01/2025.
+### MODIFICACIONES DEL DOCUMENTO
+    No aplica.
+
+### DESCRIPCIÓN DEL PROCESO
+
+###### SOLICITAR AUTORIZACION PARA RECLUTAMIENTO
+1- Ante la necesidad de realizar una contratación de personal para llenar una vacante de reemplazo o para incrementar dotación de un área o sucursal, la Jefatura o Gerencia de área debe solicitar autorización por medio de Workday, plataforma de gestión de personas de KSB.
+2. Una vez analizado el requerimiento en función de la realidad presente de la empresa (situación de mercado, dotación de personal y planificación anual), se acepta o no dicha solicitud.
+3. La solicitud debe ser aprobada en una primera instancia por la jefatura directa siendo la última aprobación para todos los efectos el(la) Director(a) Gerente.
+4. Una vez termina las aprobaciones, se notifica de manera automática, por medio de la misma plataforma a la jefatura de reclutamiento y selección, capacitación y DO, para iniciar el proceso de reclutamiento y selección.
+
+###### INICIAR RECLUTAMIENTO
+1- El reclutamiento de personal debe basarse en los perfiles de cargos del personal o si es un cargo nuevo bajo la determinación de un nuevo perfil. Adicionalmente, se deben considerar los mejores talentos del mercado independientemente de sus características personales, sexo, religión, raza u otra característica, condición o posición ajena a las competencias requeridas para el cargo. Para cumplir esta actividad utilizan los siguientes tipos de reclutamiento:
+a) Reclutamiento Interno: la jefatura de reclutamiento y selección, capacitación y DO, puede iniciar una búsqueda interna o la gerencia de área puede sugerir posibles candidatos(as). Este proceso puede ser realizado de manera formal y masiva o de forma directa y personal dependiendo de la situación del cargo (jerarquía, posición estratégica, etc.). Dichas postulaciones deben realizarse por la plataforma de Recursos Humanos Workday. Para ello, se deben activar los siguientes canales:
+o Concursos internos: Se llama públicamente a concurso interno para que puedan postular todas las personas interesadas en la vacante. Estos llamados deben ser realizados con perspectiva de género.
+o Promoción: Cuando la jefatura del puesto vacante, considera tiene uno o más candidatos(as) que cumplen con los requisitos del puesto a cubrir.
+b) Reclutamiento Externo: En el caso de no existir postulación al cargo por reclutamiento interno o en el caso que se desee contratar una persona que provenga del mercado laboral externo a la Empresa, se definen las siguientes vías alternativas de información para poder realizar el proceso de reclutamiento externo:
+        * Dar aviso a las empresas consultoras expertas en búsqueda de candidatos(as), enfatizando la importancia de presentar candidatos diversos para la posición. Estas empresas deben estar acreditadas en selección con perspectiva de género.
+        * Utilizar Avisos de Oferta de empleo en portales laborales específico según las características del cargo, con perspectiva de género
+        * Utilizar bolsas de trabajo y convenios con Universidades e Institutos con perspectiva de género.
+2. Durante todo el proceso de selección, la jefatura de reclutamiento y selección, capacitación y DO el o la Asistente de RRHH debe llenar la planilla “Vacantes”, que consolida y resume toda la información del proceso y candidatos(as) seleccionados(as).
+
+###### PRE-SELECCIONAR CANDIDATOS (FILTRO INICIAL)
+1- Una vez recibidos los antecedentes de los candidatos y candidatas, el encargado o encargada de reclutamiento o consultora en conjunto con la jefatura a cargo del proceso, debe realizar una preselección de aquellos que más se ajusten a los requerimientos del perfil del cargo (estudios, formación, experiencia y competencias técnicas). Proceso que se realiza con los curriculum en formato ciego (sin información personal).
+2- En el caso de no encontrar mujeres y/o personas con discapacidad para la posición, se debe dejar antecedentes.
+
+###### REALIZAR PRUEBAS PSICOTECNICAS
+1- Posteriormente, La jefatura de reclutamiento y selección, capacitación y DO o asistente de RRHH debe enviar la batería de pruebas asociadas al cargo que la persona postula, el cual es un informe que entrega un perfil de ajuste a las competencias requeridas para el cargo. Se debe aplicar las pruebas psicotécnicas, de acuerdo al perfil del cargo requerido según el cuadro siguiente:
+2- Las empresas o personal encargado de realizar el análisis de las pruebas deben estar acreditadas en selección con perspectiva de género.
+
+###### PRE-SELECCIONAR     CANDIDATOS (2DO FILTRO)
+1. La Jefatura de reclutamiento y selección, capacitación y DO o asistente de RRHH debe realizar la revisión de las pruebas aplicadas y coordinar entrevista con aquellos(as) postulantes que se ajustan a las competencias requeridas para el cargo.
+2- En caso de que haya participado colaboradores(as) de KSB o referidos y que éstos hayan aprobado las pruebas y entrevistas, se le dará prioridad para la preselección.
+
+###### REALIZAR ENTREVISTAS
+1- Las personas que cumplan con las competencias requeridas para el cargo, debe pasar a entrevista con la jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección, con la Jefatura directa del cargo, y en aquellas ocasiones que se requiera, la gerencia del cargo. Entrevista en base a las competencias.
+
+###### SELECCIONAR CANDIDATO
+1- De acuerdo con lo observado en las entrevistas, el/la solicitante de la vacante a cubrir debe informar a la jefatura de reclutamiento y selección, capacitación y DO y/o asistente de reclutamiento y selección, el resultado de su proceso de selección, indicando el/la postulante seleccionado y fecha de ingreso.
+
+###### GESTIONAR EXAMENES PREOCUPACIONALES
+1- La jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección debe coordinar con el equipo de HSE la solicitud de los exámenes preocupacionales acordes al cargo.
+2- La jefatura de HSE debe programar los exámenes preocupacionales con perspectiva de género, acordes al cargo con el proveedor de dichos servicios e informar a la jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento, una vez establecidas las fechas previstas.
+
+###### NOTIFICAR A CANDIDATO SELECCIONADO
+1- La jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección debe notificar la persona seleccionada e informar de los exámenes preocupacionales que deberá realizarse.
+2- Una vez recibido los resultados por parte de la Jefatura de HSE o quien esta designe y en caso de encontrarse apto, la jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección debe enviar carta oferta, previamente aprobada por RRHH y jefatura del cargo y en paralelo, debe enviar el link de postulación de la plataforma Workday. En caso de no encontrarse apto, dará aviso a la jefatura correspondiente y se procederá a realizar una nueva selección con los candidatos elegibles.
+NOTA: Si el candidato no resulta apto, deben realizarse las acciones para seleccionar otro candidato idoneo y gestionar los examenes preocupacionales junto al área de prevención para dicho candidato.
+3- Una vez recibida la carta oferta firmada, la jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección, debe dejar consignado en la plataforma Workday que el postulante está “listo para contratar”.
+4- Una vez recepcionada la carta oferta firmada, la Jefatura de Recursos Humanos y/o Asistente de Recursos Humanos debe enviar por correo electrónico carta de bienvenida solicitando la siguiente documentación e indicando el plazo de entrega.
+        · Curriculum Vitae con datos actualizados (*)
+        · Fotocopia Cedula de Identidad ambos lados (*)
+        · Visa en caso de ser extranjero (*)
+        · Certificado de Nacimiento (*)
+        · Certificado de Nacimiento hijos, en caso de tenerlos (*)
+        · Certificado de Antecedentes, en caso de que aplique
+        · Certificado afiliación AFP (*)
+        · Certificado de vacaciones progresivas.
+        · Certificado Fonasa o Isapre con plan de salud (*)
+        · Certificado de Titulo/Certificado de alumno regular (*)
+        · Fotografía formal con fondo claro
+        · Finiquito empleador anterior.
+        · Copia licencia conducir en los cargos que aplique
+        · Certificado pensión de invalidez y/o acreditación discapacidad, en caso de que aplique.
+        (*) Documentos de carácter obligatorio.
+5- La jefatura de reclutamiento y selección, capacitación y DO o asistente de reclutamiento y selección debe notificar por correo electrónico a los(as) postulantes que no quedaron seleccionados(as) y agradeciendo su participación.
+6- Una vez recibida la documentación de el(la) postulante seleccionado(a), la Jefatura de Recursos Humanos debe pasar al postulante a la etapa de “Contratado” en plataforma Workday.  Una vez terminada esta etapa, la plataforma asigna un código (IAM). Una vez que el equipo de RRHH complete la planilla "Solicitud de recursos a TI", debe enviarla a través de Freshservice, a fin de solicitar las herramientas de trabajo y accesos plataformas al equipo de TI.
+
+###### CONTRATAR PERSONAL
+1- Una vez confirmada la persona seleccionada por Gerencia, la Jefatura o el(la) Asistente de RRHH debe elaborar el correspondiente contrato de trabajo a más tardar 15 días desde la fecha de contratación.
+2- El(la) Asistente de RRHH debe habilitar la carpeta digital del personal que ingresa, la cual debe tener la documentación indicada en el punto 5 en la actividad “Notificar a candidato(a) seleccionado”.
+3. Todos los documentos antes mencionados deben ser archivados en la carpeta física de él o la nueva persona contratada, la cual será administrada por el área de recursos humanos.
+4. En caso de que el o la nueva contratación no posea todas las competencias requeridas de acuerdo al descriptor de cargo, la Gerencia del área debe solicitar a la Gerencia de RRHH un plan de desarrollo de competencias que deber ser incorporado al plan de capacitación (ver diagrama de proceso de capacitación de personal).
+5. La Jefatura de Recursos Humanos, debe activar al personal contratado en plataforma Workday y portal del colaborador, actividad que genera una notificación automática (correo y bandeja de notificación de la plataforma Workday) a él o la jefe(a) directo(a) y a él o la nuevo(a) contratación.
+6. La Jefatura de Recursos o Asistente de Recursos Humanos, debe canalizar con el Encargado de comunicaciones y/o Jefatura de HSE la entrega de ropa corporativa para él o la nuevo(a) contratación, segun sea aplicable (personal de áreas comerciales, operativas o aquellos autorizados por la Gerencia de él o la nuevo(a) contratación).
+
+###### INDUCCIÓN AL PERSONAL NUEVO INGRESO
+Inducción general
+1. Una vez contratado(a) el(la) nuevo(a) trabajador(a), la jefatura de capacitación y selección y/o Asistente de RRHH, debe elaborar un cronograma de inducción general junto a la jefatura directa del personal contratado y los responsables de las demás áreas que sean requeridas. Éste debe ser enviado, con por lo menos 2 días de antelación Dicho cronograma debe incluir:
+(*) Obligatorios.
+2. En la actividad a cargo de RRHH se debe entregar documentos legales siguientes: contrato de trabajo, anexos, descriptor de cargo, reglamento interno, código de conducta.
+3. Durante el desarrollo de la inducción, el o la nuevo(a) trabajador(a), deben firmar el cronograma de inducción. Al finalizar las actividades, dicho registro debe ser guardado por la Jefatura de Recursos Humanos y/o Asistente de Recursos Humanos en la carpeta digital del(la) trabajador(a).
+Inducción al puesto de trabajo
+4. Una vez culminada la inducción general, el o la jefe(a) directo(a) de el(la) nuevo(a) trabajador(a), debe organizar la inducción al puesto de trabajo a él o la nuevo(a) trabajador(a), coordinando diferentes actividades acordes al cargo, funciones, área y gerencia a la que pertenece.

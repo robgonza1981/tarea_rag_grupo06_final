@@ -1,0 +1,207 @@
+################################     DIAGRAMA DE PROCESO DE PROCESAMIENTO DE OV     ################################
+### OBJETIVO
+El Objetivo de este proceso es verificar la documentación asociada a los requerimientos de venta realizados por nuestros clientes, a fin de procesar de forma correcta las órdenes de venta y ordenes de trabajo que sean aplicables.
+
+### CONTROL DE CAMBIOS
+    Código: DP-O-005-CL
+    Revisión: 2
+    Revisor: Procesador Ordenes
+    Aprobador: Jefe de Procesamiento OV
+    Fecha de aprobación: 10/09/2024.
+
+### MODIFICACIONES DEL DOCUMENTO
+    Revisión 1:
+    Actividad "Revisar la cotización / documentación proyecto y asignar según tipo de venta": Inclusión del documento "Estándar glosas de venta".
+    Inclusión de 12 tutoriales.
+    Revisión 2:
+    Actividad "Editar": Inclusión de referencia a la planilla "Despachos con agendamiento".
+    Inclusión de 2 tutoriales.
+
+### DESCRIPCIÓN DEL PROCESO
+
+###### REVISAR LA COTIZACIÓN / DOCUMENTACIÓN PROYECTO Y ASIGNAR SEGÚN TIPO DE VENTA
+1- El Procesador senior debe revisar diariamente el buzón de correo electrónico cl.procesos.ov, a fin de dar respuesta a las solicitudes de procesamiento de cotizaciones de venta enviadas por los Vendedores internos. Cada solicitud debe tener los siguientes documentos adjuntos como mínimo: la orden de compra del Cliente, la Cotización de venta, Data sheet del equipo, Planilla de Costeo y las cotizaciones de proveedores (estas últimas si aplican). Cuando la venta incluye productos nuevos que no están en lista de precios y que no están en el disponible en el sistema QAD, el Vendedor debe enviar el cálculo del costo del producto.
+2. Al momento de la revisión, el Procesador senior debe verificar que:
+Los datos básicos de la OC del cliente (número de OC, datos del cliente, moneda, tipo de cambio, monto), coincidan con los indicados en la cotización de venta.
+La descripción y cantidad indicadas para cada línea de la OC coincidan con lo indicado en la cotización de venta.
+Fecha de emisión y vencimiento de la OC.
+En caso de no existir OC formal del Cliente, se debe adjuntar la autorización de la Jefatura o del Gerente a cargo del área.
+3- En caso de que todos los datos de la OC del cliente coincidan con la cotización, el Procesador senior debe asignar la solicitud al procesador correspondiente según el tipo de venta, considerando que la carga de trabajo sea equitativa para los procesadores. En caso de que no coincida alguno de estos datos, el Procesador senior debe responder el correo con la solicitud indicando que fue rechazada. Seguidamente, debe eliminarla de la bandeja la solicitud del buzón de correo electrónico cl.procesos.ov.
+4. Para facilitar el registro de los datos técnicos requeridos al momento de generar la cotización, el Vendedor interno debe cumplir lo indicado en el documento “Estándar de Glosa para ventas” (ver información documentada complementaria).
+
+
+###### VENTA DE STOCK RAPIDO
+############ REVISAR REQUISITOS PARA LA VENTA
+1- El Procesador asignado debe revisar nuevamente los datos básicos y los datos de los productos, revisando también la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2. Adicionalmente, el procesador debe verificar si la cotización fue aprobada comercialmente, en el menú 7.12.20.7 del sistema QAD (ver información documentada complementaria).
+
+¿No cumple con los requisitos?
+
+############ ELIMINAR SOLICITUD
+1- En caso de que la verificación realizada por el Procesador no cumpla con los requisitos, el Procesador debe responder el correo indicando que el proceso es rechazado y el motivo del rechazo. Seguidamente, debe eliminar de la bandeja de entrada la solicitud enviada por el área comercial del buzón de correo electrónico cl.procesos.ov.
+
+¿Cumple con los requisitos?
+
+############ LIBERAR OV
+1- El Procesador debe realizar la liberación de la orden de venta, a través del módulo 7.12.10 del sistema QAD (ver información documentada complementaria). Para ello, debe indicar el número de cotización en el campo “orden trabajo” y dar clic en siguiente. Seguidamente, en pantalla se mostrará el número de OV liberada.
+
+############ EDITAR OV
+1- El procesador debe ingresar y corregir los datos en la orden de venta, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria).
+NOTA: La información de despacho debe coincidir con la información suministrada por almacenes (planilla “Despachos con agendamiento”)
+2- Debe tomarse en cuenta que el plazo de entrega para las ventas de stock rápido es de 1 día hábil siempre y cuando se procese antes de las 14 horas del día en el que se hace el pedido. Este plazo debe ser indicado en el correo de confirmación de Pedido.
+3- Una vez revisada y corregida la OV, el Procesador debe construir el archivo de la confirmación de pedido, para lo cual une en un solo archivo los documentos de confirmación de orden de venta, la orden de compra del cliente y la cotización de venta enviada por el área comercial.
+
+############ CONFIRMAR PEDIDO
+1- Debe tomarse en cuenta que el plazo de entrega para las ventas de stock que no tengan asociada una OT debe ser de 2 días hábiles siempre y cuando se procese antes de las 14 horas del día en el que se hace el pedido. Este plazo debe ser indicado en el correo de confirmación de Pedido.
+2- En caso de que el equipo tenga asociada una orden de trabajo, el Procesador debe considerar la carga de trabajo del área de producción y los tiempos estándar de producción y almacenes, para estimar la fecha de entrega del equipo en cuestión. Para realizar esta estimación se usan los archivos “Reporte carga producción” y “Reporte carga de almacenes”, los cuales el sistema QAD actualiza diariamente de forma automática.
+3- Las recetas estándar están disponibles en la opción 3.6.30.31 “Test Stock disp. Origen” (ver información documentada complementaria).
+4- Una vez revisada y corregida la OV, el Procesador debe construir el archivo de la confirmación del pedido, para lo cual une en un solo archivo los documentos de confirmación de orden de venta, la orden de compra del cliente, la cotización de venta enviada por el área comercial, el data sheet del equipo (si aplica) y las cotizaciones de los proveedores (si aplican), entre otros requeridos.
+
+############ CARGAR DOCUMENTACIÓN EN E-DOCS
+1-El Procesador debe cargar el archivo que contiene toda la documentación del proceso en el módulo 43.1 del sistema QAD (ver información documentada complementaria).
+2- Seguidamente el procesador debe enviar al Vendedor con copia al Vendedor interno y su jefatura un correo electrónico en respuesta a su solicitud, teniendo como cuerpo del correo la confirmación de pedido.
+
+###### VENTA DE STOCK
+############ REVISAR REQUISITOS PARA LA VENTA
+1- El Procesador asignado debe revisar nuevamente los datos básicos y los datos de los productos, revisando también la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2. Adicionalmente, el procesador debe verificar si la cotización fue aprobada comercialmente, en el menú 7.12.20.7 del sistema QAD (ver información documentada complementaria).
+
+¿No cumple con los requisitos?
+
+############ ELIMINAR SOLICITUD
+1- En caso de que la verificación realizada por el Procesador no cumpla con los requisitos, el Procesador debe responder el correo indicando que el proceso es rechazado y el motivo del rechazo. Seguidamente, debe eliminar de la bandeja de entrada la solicitud enviada por el área comercial del buzón de correo electrónico cl.procesos.ov.
+
+¿Cumple con los requisitos?
+
+############ LIBERAR OV
+1- El Procesador debe realizar la liberación de la orden de venta, a través del módulo 7.12.10 del sistema QAD (ver información documentada complementaria). Para ello, debe indicar el número de cotización en el campo “orden trabajo” y dar clic en siguiente. Seguidamente, en pantalla se mostrará el número de OV liberada.
+
+¿Se requiere crear códigos/recetas?
+
+############ CREAR CÓDIGOS / RECETAS
+1- El Procesador Senior debe crear el o los códigos en el sistema QAD a través del menú 1.4.12 – 1.4.30.25 – 13.1 (ver información documentada complementaria). Dependiendo si existe o no el código en el maestro, se debe crear un código nuevo o replicarlo/configurarlo a partir de uno existente.
+2- En el caso de que se trate de un código configurado, el Procesador Senior debe crear la receta en el sistema QAD a través del menú 13.5 (ver información documentada complementaria).
+
+############ EDITAR OV
+El procesador debe ingresar y corregir los datos en la orden de venta, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria).
+NOTA: La información de despacho debe coincidir con la información suministrada por almacenes (planilla “Despachos con agendamiento”)
+
+¿Se requiere ensamble?
+
+############ GENERAR Y LIBERAR OT
+1- El Procesador debe liberar la orden de trabajo a través del menú 8.13 (ver información documentada complementaria).
+2- Seguidamente, el Procesador debe cambiar el estatus de la orden de trabajo interna de estatus “E” a status “A” y en caso de ser requerido, revisar la OT a través del menú 16.1 (ver información documentada complementaria).
+3- Para editar una OT el Procesador debe ingresar menú 16.13.1 del sistema QAD (ver información documentada complementaria).
+
+¿Se requiere realizar compra?
+
+############ SOLICITAR COMPRA
+1- El Procesador debe realizar la solicitud de compra de los artículos faltantes, revisando la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2- La solicitud de compra debe realizarse siguiendo las indicaciones referidas en el diagrama de proceso de compras.
+
+############ CONFIRMAR PEDIDO
+1- Debe tomarse en cuenta que el plazo de entrega para las ventas de stock que no tengan asociada una OT debe ser de 2 días hábiles siempre y cuando se procese antes de las 14 horas del día en el que se hace el pedido. Este plazo debe ser indicado en el correo de confirmación de Pedido.
+2- En caso de que el equipo tenga asociada una orden de trabajo, el Procesador debe considerar la carga de trabajo del área de producción y los tiempos estándar de producción y almacenes, para estimar la fecha de entrega del equipo en cuestión. Para realizar esta estimación se usan los archivos “Reporte carga producción” y “Reporte carga de almacenes”, los cuales el sistema QAD actualiza diariamente de forma automática.
+3- Las recetas estándar están disponibles en la opción 3.6.30.31 “Test Stock disp. Origen” (ver información documentada complementaria).
+4- Una vez revisada y corregida la OV, el Procesador debe construir el archivo de la confirmación del pedido, para lo cual une en un solo archivo los documentos de confirmación de orden de venta, la orden de compra del cliente, la cotización de venta enviada por el área comercial, el data sheet del equipo (si aplica) y las cotizaciones de los proveedores (si aplican), entre otros requeridos.
+
+############ CARGAR DOCUMENTACIÓN EN E-DOCS
+1-El Procesador debe cargar el archivo que contiene toda la documentación del proceso en el módulo 43.1 del sistema QAD (ver información documentada complementaria).
+2- Seguidamente el procesador debe enviar al Vendedor con copia al Vendedor interno y su jefatura un correo electrónico en respuesta a su solicitud, teniendo como cuerpo del correo la confirmación de pedido.
+
+###### VENTA CALZADA
+############ REVISAR REQUISITOS PARA LA VENTA
+1- El Procesador asignado debe revisar nuevamente los datos básicos y los datos de los productos, revisando también la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2. Adicionalmente, el procesador debe verificar si la cotización fue aprobada comercialmente, en el menú 7.12.20.7 del sistema QAD (ver información documentada complementaria).
+
+¿No cumple con los requisitos?
+
+############ ELIMINAR SOLICITUD
+1- En caso de que la verificación realizada por el Procesador no cumpla con los requisitos, el Procesador debe responder el correo indicando que el proceso es rechazado y el motivo del rechazo. Seguidamente, debe eliminar de la bandeja de entrada la solicitud enviada por el área comercial del buzón de correo electrónico cl.procesos.ov.
+
+¿Cumple con los requisitos?
+
+############ LIBERAR OV
+1- El Procesador debe realizar la liberación de la orden de venta, a través del módulo 7.12.10 del sistema QAD (ver información documentada complementaria). Para ello, debe indicar el número de cotización en el campo “orden trabajo” y dar clic en siguiente. Seguidamente, en pantalla se mostrará el número de OV liberada.
+
+¿Se requiere crear códigos/recetas?
+
+############ CREAR CÓDIGOS / RECETAS
+1- El Procesador Senior debe crear el o los códigos en el sistema QAD a través del menú 1.4.12 – 1.4.30.25 – 13.1 (ver información documentada complementaria). Dependiendo si existe o no el código en el maestro, se debe crear un código nuevo o replicarlo/configurarlo a partir de uno existente.
+2- En el caso de que se trate de un código configurado, el Procesador Senior debe crear la receta en el sistema QAD a través del menú 13.5 (ver información documentada complementaria).
+
+############ EDITAR OV
+1- El procesador debe ingresar y corregir los datos en la orden de venta, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria).
+NOTA: La información de despacho debe coincidir con la información suministrada por almacenes (planilla “Despachos con agendamiento”)
+
+¿Se requiere ensamble?
+
+############ GENERAR Y LIBERAR OT
+1- El Procesador debe liberar la orden de trabajo a través del menú 8.13 (ver información documentada complementaria).
+2- Seguidamente, el Procesador debe cambiar el status de la orden de trabajo interna de status “E” a status “A” y en caso de ser requerido, revisar la OT a través del menú 16.1 (ver información documentada complementaria).
+3- Para editar una OT el Procesador debe ingresar menú 16.13.1 del sistema QAD (ver información documentada complementaria).
+
+¿Se requiere realizar compra?
+
+############ SOLICITAR COMPRA
+1- El Procesador debe realizar la solicitud de compra de los artículos faltantes, revisando la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2- La solicitud de compra debe realizarse siguiendo las indicaciones referidas en el diagrama de proceso de compras o diagrama de proceso de Comex.
+
+############ CONFIRMAR PEDIDO
+1- Debe tomarse en cuenta que para los procesos que requieran compras calzadas de Importación, los plazos de entrega serán informados una vez recepcionadas las Confirmaciones de pedido de Proveedores o Fabrica.
+2- En caso de que el equipo tenga asociada una orden de trabajo, el Procesador debe considerar la carga de trabajo del área de producción y los tiempos estándar de producción y almacenes, para estimar la fecha de entrega del equipo en cuestión. Para realizar esta estimación se usa la plataforma Qlik sense (BI) en los módulos de almacén, producción y planificación.
+3- Las recetas estándar están disponibles en el menú 3.6.30.31 “Test Stock disp. Origen” (ver información documentada complementaria).
+4- Una vez revisada y corregida la OV, el Procesador debe construir el archivo de la confirmación del pedido, para lo cual une en un solo archivo los documentos de confirmación de orden de venta, la orden de compra del cliente, la cotización de venta enviada por el área comercial, el data sheet del equipo (si aplica), Planilla de Costeo (Si Aplica), cotizaciones de los proveedores o fabrica (si aplican), Datos de Usuario Final (Si Aplica).
+
+############ CARGAR DOCUMENTACIÓN EN E-DOCS
+1-El Procesador debe cargar el archivo que contiene toda la documentación del proceso en el módulo 43.1 del sistema QAD (ver información documentada complementaria).
+2- Si proceso NO requiere de compra de importación, el procesador debe enviar al Vendedor con copia al Vendedor interno y su jefatura un correo electrónico en respuesta a su solicitud, teniendo como cuerpo del correo la confirmación de pedido.
+3- Si proceso SI requiere de compra de importación, el procesador no enviara el correo electrónico con la confirmación de pedido hasta contar con la Confirmación de Pedido del Proveedor Extranjero o Fabrica.
+
+###### VENTA DE PROYECTOS
+
+############ REVISAR REQUISITOS DEL PROYECTO
+1- El Procesador Senior debe asistir a la reunión de lanzamiento interna (kick-off-meeting), a fin revisar los requerimientos del proyecto (productos, servicios, documentación).
+2- En caso de que no se tenga disponible la Orden de compra del cliente, el personal de Ventas Internas asignado/Jefe de ventas debe solicitar la aprobación para su proceso al Director Gerente.
+3- El personal de Ventas Internas asignado/Jefe de ventas debe entregar la documentación asociada al proyecto al Procesador asignado. Dicha documentación debe ir acompañada del “Protocolo entrega proyecto”. En caso de consultas, estas deben saldarse junto al personal de Ventas Internas asignado/Jefe de ventas.
+
+¿Cumple con los requisitos?
+
+############ GENERAR OV
+1- El procesador Senior ingresar y corregir los datos en la orden de venta, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria).
+2- En caso de que participen varias áreas de negocio en el proyecto, se generarán órdenes de venta independientes por área y se realiza el paso 1 para cada una de ellas.
+
+¿Se requiere crear códigos/recetas?
+
+############ CREAR CÓDIGOS / RECETAS
+1- El Procesador Senior debe crear el o los códigos en el sistema QAD a través del menú 1.4.12 – 1.4.30.25 – 13.1 (ver información documentada complementaria). Dependiendo si existe o no el código en el maestro, se debe crear un código nuevo o replicarlo/configurarlo a partir de uno existente.
+2- En el caso de que se trate de un código configurado, el Procesador Senior debe crear la receta en el sistema QAD a través del menú 13.5 (ver información documentada complementaria).
+
+############ EDITAR OV
+1- El procesador senior debe ingresar y corregir los datos en la orden de venta, a través del módulo 7.1.1 del sistema QAD (ver información documentada complementaria).
+NOTA: La información de despacho debe coincidir con la información suministrada por almacenes (planilla “Despachos con agendamiento”)
+
+¿Se requiere ensamble?
+
+############ GENERAR Y LIBERAR OT
+1- El Procesador senior debe liberar la orden de trabajo a través del menú 8.13 (ver información documentada complementaria).
+2- Seguidamente, el Procesador debe cambiar el estatus de la orden de trabajo interna de status “E” a status “A” y en caso de ser requerido, revisar la OT a través del menú 16.1 (ver información documentada complementaria).
+3- Para editar una OT el Procesador debe ingresar menú 16.13.1 del sistema QAD (ver información documentada complementaria).
+
+¿Se requiere realizar compra?
+
+############ SOLICITAR COMPRA
+1- El Procesador Senior debe realizar la solicitud de compra de los artículos faltantes, revisando la disponibilidad de estos a través del menú 3.6.30.31 del sistema QAD (ver información documentada complementaria).
+2- La solicitud de compra debe realizarse siguiendo las indicaciones referidas en el diagrama de proceso de compras o diagrama de proceso de Comex.
+
+############ CONFIRMAR PEDIDO
+1- Debe tomarse en cuenta que para los procesos que requieran compras calzadas, los plazos de entrega serán informados una vez recepcionadas las confirmaciones de pedido de Proveedores o Fabrica.
+2- En caso de que el equipo tenga asociada una orden de trabajo, el Procesador Senior debe considerar la carga de trabajo del área de producción y los tiempos estándar de producción y almacenes, para estimar la fecha de entrega del equipo en cuestión. Para realizar esta estimación se usa la plataforma Qlik sense (BI) en los módulos de almacén, producción y planificación.
+3- Las recetas estándar están disponibles en 3.6.30.31 “Test Stock disp. Origen” (ver información documentada complementaria).
+4- Una vez revisada y corregida la OV, el Procesador Senior debe construir el archivo de la confirmación del pedido, para lo cual une en un solo archivo los documentos de confirmación de orden de venta, la orden de compra del cliente, la cotización de ventas enviada por el área comercial, el data sheet del equipo (si aplica), Planilla de Costeo (Si Aplica), cotizaciones de los proveedores o fabrica (si aplican), Datos de Usuario Final (Si Aplica), entre otros requeridos.
+
+
+############ CARGAR DOCUMENTACIÓN EN E-DOCS
+1-El Procesador Senior debe cargar el archivo que contiene toda la documentación del proceso en el módulo 43.1 del sistema QAD (ver información documentada complementaria).
+2- Si proceso NO requiere de compra de importación, el procesador Senior debe enviar al Vendedor con copia al Vendedor interno y su jefatura un correo electrónico en respuesta a su solicitud, teniendo como cuerpo del correo la confirmación de pedido.
+3- Si proceso SI requiere de compra de importación, el procesador Senior no enviara el correo electrónico con la confirmación de pedido hasta contar con la Confirmación de Pedido del Proveedor Extranjero o Fabrica.
