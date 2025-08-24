@@ -8,14 +8,10 @@ Demo local
 UI: http://localhost:8000/ui
 
 Playgrounds LangServe:
-
-http://localhost:8000/rag/playground
-
-http://localhost:8000/chat/playground
-
-Swagger: http://localhost:8000/docs
-
-Health: http://localhost:8000/health
+ui
+https://rag-g6.fly.dev/ui/
+docs
+https://rag-g6.fly.dev/docs
 
 Tabla de contenidos
 
@@ -279,4 +275,5 @@ Conciencia de Contexto: 9.53/10
    Al agrupar y ordenar, se puede pasar menos texto redundante al LLM (contexto más “denso”), bajando tokens sin perder continuidad.
 
  
+
  En resumen: para este  caso, la metadata jerárquica permite recuperar la sección exacta, rearmar los pasos en orden, reforzar con códigos de menú y producir respuestas verificables y consistentes. Por eso subió el answer_ok en el evaluador y por eso resiste mejor las variaciones de la pregunta.
